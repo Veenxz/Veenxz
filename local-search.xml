@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>test</title>
+    <link href="undefined2019/10/28/test/"/>
+    <url>2019/10/28/test/</url>
+    
+    <content type="html"><![CDATA[<h3 id="连续性方程"><a href="#连续性方程" class="headerlink" title="连续性方程"></a>连续性方程</h3><ul><li><p>气相连续性方程</p><p>$\frac{\partial}{\partial t}\left(f \varepsilon_{g c} \rho_{g}\right)+\nabla \cdot\left(f \varepsilon_{g c} \rho_{g} \mathbf{u}<em>{g c}\right)=\Gamma</em>{g}$<br>$$<br>\frac{\partial}{\partial t}\left(f \varepsilon_{g c} \rho_{g}\right)+\nabla \cdot\left(f \varepsilon_{g c} \rho_{g} \mathbf{u}<em>{g c}\right)=\Gamma</em>{g}<br>$$</p></li></ul><p>$$<br>\Gamma_{g}=-\frac{1}{V} \int_{A_{i}} \dot{m}_{g c}^{\bullet} d A<br>$$</p><ul><li><p>固相连续性方程<br>$$<br>\frac{\partial}{\partial t}\left(f \varepsilon_{s c} \rho_{s}\right)+\nabla \cdot\left(f \varepsilon_{s c} \rho_{s} \mathbf{u}<em>{s c}\right)=\Gamma</em>{s}<br>$$</p><p>$$<br>\Gamma_{s}=-\frac{1}{V} \int_{A_{i}} \dot{m_{s c}} d A<br>$$</p></li><li></li></ul><p>$$<br>\frac{\partial}{\partial t}\left(f \varepsilon_{g c} \rho_{g} \mathbf{u}<em>{g c}\right)+\nabla \cdot\left(f \varepsilon</em>{g e} \rho_{g} \mathbf{u}<em>{g c} \mathbf{u}</em>{g e}\right)=-f \nabla p+\nabla \cdot\left(f \tau_{g e}\right)+f \rho_{g} \mathbf{g}-f \mathbf{F}<em>{d c}+\Gamma</em>{g} \mathbf{u}_{g}^{i}<br>$$</p><h3 id="汇报"><a href="#汇报" class="headerlink" title="汇报"></a>汇报</h3><ul><li><p>湍流强度<br>$$<br>I=\frac{\sqrt{\overline{u^{\prime 2}+\overline{v^{\prime 2}}+\overline{w^{\prime 2}}}}}{U}=0.16 \times R e^{-\frac{1}{8}}<br>$$</p></li><li><p>涡量<br>$$<br>\boldsymbol{\Omega}=\boldsymbol{\nabla} \times \boldsymbol{U}<br>$$</p></li><li><p>气相雷诺数<br>$$<br>\operatorname{Re}<em>{\mathrm{g}}=\frac{U L}{v</em>{\mathrm{g}}}<br>$$</p></li><li><p>沙相雷诺数<br>$$<br>\mathrm{Re}<em>{\mathrm{s}}=\frac{d</em>{\mathrm{s}}\left|U_{\mathrm{s}}-U_{\mathrm{g}}\right|}{v_{\mathrm{g}}}<br>$$</p></li><li><p>沙相斯托克斯数<br>$$<br>\mathrm{St}=\frac{U \tau_{\mathrm{s}}}{L}=\frac{\rho_{\mathrm{s}} d_{\mathrm{s}}^{2} U}{18 \rho_{\mathrm{g}} v_{\mathrm{g}} L}<br>$$</p></li></ul><p>$$<br>\frac{\partial f}{\partial t}+\boldsymbol{v} \cdot \frac{\partial f}{\partial \boldsymbol{x}}=-\frac{1}{\tau}\left(f-f^{\mathrm{eq}}\right)<br>$$</p><p>$$<br>\frac{\partial f_{i}}{\partial t}+\boldsymbol{v}<em>{i} \cdot \frac{\partial f</em>{i}}{\partial \boldsymbol{x}}=-\frac{1}{\tau}\left(f_{i}-f_{i}^{\mathrm{eq}}\right)<br>$$</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Test</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello Markdown</title>
+    <link href="undefined2019/10/19/Hello%20Markdown/"/>
+    <url>2019/10/19/Hello%20Markdown/</url>
+    
+    <content type="html"><![CDATA[<p>本文用于</p><a id="more"></a>]]></content>
+    
+    
+    <categories>
+      
+      <category>Tools</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Markdown</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>C Summary</title>
+    <link href="undefined2019/10/18/C-Summary/"/>
+    <url>2019/10/18/C-Summary/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Programming</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>C</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>CFD Theory</title>
+    <link href="undefined2019/10/18/CFD-Theory/"/>
+    <url>2019/10/18/CFD-Theory/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>CFD</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>CFD</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Study C++</title>
+    <link href="undefined2019/10/18/Study-C/"/>
+    <url>2019/10/18/Study-C/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Programming</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>C++</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Study HTML</title>
+    <link href="undefined2019/10/18/Study-HTML/"/>
+    <url>2019/10/18/Study-HTML/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Programming</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>HTML</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Study Julia</title>
+    <link href="undefined2019/10/18/Study-Julia/"/>
+    <url>2019/10/18/Study-Julia/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Programming</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Julia</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>My first post</title>
+    <link href="undefined2019/10/16/My%20first%20post/"/>
+    <url>2019/10/16/My%20first%20post/</url>
+    
+    <content type="html"><![CDATA[<h2 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h2><p>本博客使用Github与Hexo搭建，使用<a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="noopener">hexo-theme-fluid</a>。</p><p>支持valine评论。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Others</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="undefined2019/10/16/hello-world/"/>
+    <url>2019/10/16/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
