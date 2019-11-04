@@ -4,25 +4,6 @@
   
   
   <entry>
-    <title>test</title>
-    <link href="undefined2019/10/28/test/"/>
-    <url>2019/10/28/test/</url>
-    
-    <content type="html"><![CDATA[<h3 id="连续性方程"><a href="#连续性方程" class="headerlink" title="连续性方程"></a>连续性方程</h3><ul><li><p>气相连续性方程</p><p>$\frac{\partial}{\partial t}\left(f \varepsilon_{g c} \rho_{g}\right)+\nabla \cdot\left(f \varepsilon_{g c} \rho_{g} \mathbf{u}<em>{g c}\right)=\Gamma</em>{g}$<br>$$<br>\frac{\partial}{\partial t}\left(f \varepsilon_{g c} \rho_{g}\right)+\nabla \cdot\left(f \varepsilon_{g c} \rho_{g} \mathbf{u}<em>{g c}\right)=\Gamma</em>{g}<br>$$</p></li></ul><p>$$<br>\Gamma_{g}=-\frac{1}{V} \int_{A_{i}} \dot{m}_{g c}^{\bullet} d A<br>$$</p><ul><li><p>固相连续性方程<br>$$<br>\frac{\partial}{\partial t}\left(f \varepsilon_{s c} \rho_{s}\right)+\nabla \cdot\left(f \varepsilon_{s c} \rho_{s} \mathbf{u}<em>{s c}\right)=\Gamma</em>{s}<br>$$</p><p>$$<br>\Gamma_{s}=-\frac{1}{V} \int_{A_{i}} \dot{m_{s c}} d A<br>$$</p></li><li></li></ul><p>$$<br>\frac{\partial}{\partial t}\left(f \varepsilon_{g c} \rho_{g} \mathbf{u}<em>{g c}\right)+\nabla \cdot\left(f \varepsilon</em>{g e} \rho_{g} \mathbf{u}<em>{g c} \mathbf{u}</em>{g e}\right)=-f \nabla p+\nabla \cdot\left(f \tau_{g e}\right)+f \rho_{g} \mathbf{g}-f \mathbf{F}<em>{d c}+\Gamma</em>{g} \mathbf{u}_{g}^{i}<br>$$</p><h3 id="汇报"><a href="#汇报" class="headerlink" title="汇报"></a>汇报</h3><ul><li><p>湍流强度<br>$$<br>I=\frac{\sqrt{\overline{u^{\prime 2}+\overline{v^{\prime 2}}+\overline{w^{\prime 2}}}}}{U}=0.16 \times R e^{-\frac{1}{8}}<br>$$</p></li><li><p>涡量<br>$$<br>\boldsymbol{\Omega}=\boldsymbol{\nabla} \times \boldsymbol{U}<br>$$</p></li><li><p>气相雷诺数<br>$$<br>\operatorname{Re}<em>{\mathrm{g}}=\frac{U L}{v</em>{\mathrm{g}}}<br>$$</p></li><li><p>沙相雷诺数<br>$$<br>\mathrm{Re}<em>{\mathrm{s}}=\frac{d</em>{\mathrm{s}}\left|U_{\mathrm{s}}-U_{\mathrm{g}}\right|}{v_{\mathrm{g}}}<br>$$</p></li><li><p>沙相斯托克斯数<br>$$<br>\mathrm{St}=\frac{U \tau_{\mathrm{s}}}{L}=\frac{\rho_{\mathrm{s}} d_{\mathrm{s}}^{2} U}{18 \rho_{\mathrm{g}} v_{\mathrm{g}} L}<br>$$</p></li></ul><p>$$<br>\frac{\partial f}{\partial t}+\boldsymbol{v} \cdot \frac{\partial f}{\partial \boldsymbol{x}}=-\frac{1}{\tau}\left(f-f^{\mathrm{eq}}\right)<br>$$</p><p>$$<br>\frac{\partial f_{i}}{\partial t}+\boldsymbol{v}<em>{i} \cdot \frac{\partial f</em>{i}}{\partial \boldsymbol{x}}=-\frac{1}{\tau}\left(f_{i}-f_{i}^{\mathrm{eq}}\right)<br>$$</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>Test</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Hello Markdown</title>
     <link href="undefined2019/10/19/Hello%20Markdown/"/>
     <url>2019/10/19/Hello%20Markdown/</url>
