@@ -15,7 +15,7 @@
   <meta name="description" content="">
   <meta name="author" content="Veen">
   <meta name="keywords" content="">
-  <title>归档 ~ Veen</title>
+  <title>Git Bash ~ Veen</title>
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
   <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
@@ -91,7 +91,7 @@
 </nav>
 
     <div class="view intro-2" id="background"
-         style="background: url('/img/tree1.jpg')no-repeat center center;
+         style="background: url('/img/tree.jpg')no-repeat center center;
            background-size: cover;
            background-attachment: fixed;">
       <div class="full-bg-img">
@@ -101,6 +101,9 @@
               
             </span>
 
+            
+              <br>
+              <p class="mt-3">星期三, 十一月 27日 2019, 12:17 凌晨</p>
             
           </div>
 
@@ -112,77 +115,181 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 9 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2019</p>
-    
-    <a href="/2019/10/19/Hello%20Markdown/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello Markdown</span>
-      <span style="float: right;">10-19</span>
-    </a>
-  
-    
-    <a href="/2019/10/18/C-Summary/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">C Summary</span>
-      <span style="float: right;">10-18</span>
-    </a>
-  
-    
-    <a href="/2019/10/18/CFD-Theory/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">CFD Theory</span>
-      <span style="float: right;">10-18</span>
-    </a>
-  
-    
-    <a href="/2019/10/18/Study-C/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Study C++</span>
-      <span style="float: right;">10-18</span>
-    </a>
-  
-    
-    <a href="/2019/10/18/Study-HTML/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Study HTML</span>
-      <span style="float: right;">10-18</span>
-    </a>
-  
-    
-    <a href="/2019/10/18/Study-Julia/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Study Julia</span>
-      <span style="float: right;">10-18</span>
-    </a>
-  
-    
-    <a href="/2019/10/16/My%20first%20post/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">My first post</span>
-      <span style="float: right;">10-16</span>
-    </a>
-  
-    
-    <a href="/2019/10/16/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <span style="float: right;">10-16</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto">
+          <div class="markdown-body">
+            <p>本文用于记录Git常用语法。</p>
+<a id="more"></a>
 
-              </div>
-            </div>
+<blockquote>
+<p>Git Bash登录</p>
+</blockquote>
+<pre><code class="bash">$ git config --global user.name “Your Name” //（注意前边是“- -global”，有两个横线） 
+
+$ git config --global user.email “email@example.com”</code></pre>
+<blockquote>
+<p>Git Bash创建仓库</p>
+</blockquote>
+<pre><code class="bash">$ git init newrepo
+
+$ git add README //将目录下以README文件提交到仓库中
+
+$ git commit -m &#39;初始化项目版本&#39;//备注功能
+
+$ git clone &lt;repo&gt; &lt;directory&gt; //repo:Git 仓库 directory:本地目录。
+
+$ git status //查看项目的当前状态</code></pre>
+<blockquote>
+<p>git add</p>
+</blockquote>
+<pre><code class="bash">$ git add . //他会监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。
+
+$ git add -u //他仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）
+
+$ git add -A //是上面两个功能的合集（git add --all的缩写）</code></pre>
+<blockquote>
+<p>Git Bash分支管理</p>
+</blockquote>
+<pre><code class="bash">$ git branch (branchname) //创建分支命令
+
+$ git checkout (branchname) //切换分支命令
+
+$ git merge //合并分支
+
+$ git branch //列出分支
+
+$ git branch -d (branchname) //删除分支</code></pre>
+<blockquote>
+<p>Git Bash查看提交历史</p>
+</blockquote>
+<pre><code class="bash">$ git log
+
+$ git log --oneline //用 --oneline 选项来查看历史记录的简洁的版本</code></pre>
+<blockquote>
+<p>Git Bash创建标签</p>
+</blockquote>
+<pre><code class="bash">$ git tag -a v1.0 //创建标签
+
+$ git tag -d v1.1 //删除标签
+
+$ git show v1.0 //查看此版本修改内容</code></pre>
+<blockquote>
+<p>Git Bash提交修改</p>
+</blockquote>
+<ul>
+<li>远程仓库未创建</li>
+</ul>
+<pre><code class="bash">git init //初始化一只本地仓库（或者基于初始化仓库建立项目vue init webpack demoxxxx）
+
+git status //查看状态
+
+git add -A //提交所有文件改动
+
+git remote add origin ssh地址 // 链接远程仓库步骤1
+
+git push -u origin master //链接远程仓库步骤2
+
+git add -A //提交所有文件改动
+
+git status //查看状态
+
+git commit -m &quot;xx&quot; //备注功能
+
+git status //查看状态
+
+git pull origin master //拉最新代码 （下载）
+
+git push origin master //推送到远程 （上传）</code></pre>
+<hr>
+<ul>
+<li>远程仓库已创建：</li>
+</ul>
+<pre><code class="bash">git clone ssh地址 //关联远程
+
+git remote add origin ssh地址 // 链接远程仓库步骤1
+
+git pull origin master //拉最新代码 （下载）
+
+git add -A //提交所有文件改动
+
+git commit -m &quot;xx&quot; //备注功能
+
+git push origin master //推送到远程 （上传）</code></pre>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            
+            <p>
+              <i class="iconfont icon-tag"></i>
+              
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+  <div id="vcomments" style="width: 90%; margin: 0 auto;"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    var oldLoad = window.onload;
+    window.onload = function () {
+      new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        app_id: "w8VaEP3iTgYj1EnQ7TsHSp6k-gzGzoHsz",
+        app_key: "bB6pIAfcqCjPz7ujeqh5nVut",
+        placeholder: "说点什么？",
+        avatar: "retro",
+        meta: ['nick', 'mail', 'link'],
+        pageSize: "10",
+        visitor: "false"
+      });
+      oldLoad && oldLoad();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -250,6 +357,11 @@
   <script src="/js/lazyload.js" ></script>
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
   <script src="/lib/prettify/prettify.min.js" ></script>
   <script>
@@ -265,7 +377,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "Git Bash&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 50,
