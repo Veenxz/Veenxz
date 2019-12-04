@@ -6,7 +6,7 @@ header,
   overflow-wrap: break-word;
 }
 body {
-  background-color: 4b5a6e;
+  background-color: #eee;
   color: #3c4858;
 }
 body a {
@@ -21,6 +21,11 @@ body a:hover {
 }
 .hover-with-bg:hover {
   background-color: #f8f9fa !important;
+}
+.visitors {
+  font-size: 0.8em;
+  padding: 0.45rem;
+  float: right;
 }
 #board {
   position: relative;
@@ -52,6 +57,9 @@ body a:hover {
   height: 0.2em;
   margin: 2rem 0;
 }
+.markdown-body strong {
+  font-weight: bold;
+}
 .list-group-item {
   border: 0;
 }
@@ -61,19 +69,19 @@ body a:hover {
 .navbar {
   background-color: transparent;
   font-size: 0.875rem;
-  color: black;
+  color: white;
 }
 .navbar a {
-  color: black;
+  color: white;
 }
 .navbar a:hover {
   background-color: rgba(0,0,0,0.1);
 }
 .navbar-custom {
-  color: black;
+  color: white;
 }
 .navbar-custom a {
-  color: black;
+  color: white;
 }
 .top-nav-collapse {
   background-color: #2f4154;
@@ -86,6 +94,24 @@ body a:hover {
     font-size: 1rem;
     line-height: 2.5rem;
   }
+}
+.pagination a,
+.pagination .current {
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  -webkit-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.pagination a:hover,
+.pagination .current {
+  background-color: #eee;
 }
 .scroll-down-bar {
   position: absolute;
@@ -213,6 +239,23 @@ body a:hover {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+.wechat {
+  cursor: pointer;
+  position: relative;
+}
+.wechat:hover .wechat-qrcode {
+  display: block;
+}
+.wechat-qrcode {
+  width: 200px;
+  height: 300px;
+  background: url("") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: -100px;
+  z-index: 99;
+  display: none;
 }
 @-moz-keyframes scroll-down {
   0% {
@@ -404,10 +447,20 @@ h6::before {
 }
 #toc {
   padding: 3rem 0 0 0;
+  height: 80%;
+}
+#tocbot {
+  max-height: 100%;
+  overflow-y: auto;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
 #tocbot ol {
   list-style: none;
   padding-inline-start: 1rem;
+}
+#tocbot::-webkit-scrollbar {
+  display: none;
 }
 .tocbot-list ol {
   list-style: none;
@@ -451,6 +504,9 @@ h6::before {
   .comments {
     max-width: 64rem;
   }
+}
+.katex-block {
+  overflow-x: auto;
 }
 .about-avatar {
   position: relative;
