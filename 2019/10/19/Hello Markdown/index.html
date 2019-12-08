@@ -120,7 +120,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    112 字
+                    218 字
                   </span>&nbsp;
                 
 
@@ -190,7 +190,100 @@ Hello World!
 <pre><code class="markdown">$$
 \frac{\partial p}{\partial x}=0
 $$</code></pre>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><pre><code class="markdown">- [x] 已完成
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ol>
+<li><h4 id="极简方式"><a href="#极简方式" class="headerlink" title="极简方式"></a>极简方式</h4><pre><code class="markdown">name | 价格 |  数量  
+-|-|-
+香蕉 | $1 | 5 |
+苹果 | $1 | 6 |
+草莓 | $1 | 7 |</code></pre>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>价格</th>
+<th>数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>香蕉</td>
+<td>$1</td>
+<td>5</td>
+</tr>
+<tr>
+<td>苹果</td>
+<td>$1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>草莓</td>
+<td>$1</td>
+<td>7</td>
+</tr>
+</tbody></table>
+</li>
+<li><h4 id="简单方法"><a href="#简单方法" class="headerlink" title="简单方法"></a>简单方法</h4><pre><code class="markdown">name | 111 | 222 | 333 | 444
+- | :-: | :-: | :-: | -:
+aaa | bbb | ccc | ddd | eee| 
+fff | ggg| hhh | iii | 000|</code></pre>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th align="center">111</th>
+<th align="center">222</th>
+<th align="center">333</th>
+<th align="right">444</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>aaa</td>
+<td align="center">bbb</td>
+<td align="center">ccc</td>
+<td align="center">ddd</td>
+<td align="right">eee</td>
+</tr>
+<tr>
+<td>fff</td>
+<td align="center">ggg</td>
+<td align="center">hhh</td>
+<td align="center">iii</td>
+<td align="right">000</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>原生方法</p>
+<pre><code class="markdown">name | 111 | 222 | 333 | 444
+:-: | :-: | :-: | :-: | :-:
+aaa | bbb | ccc | ddd | eee| 
+fff | ggg| hhh | iii | 000|</code></pre>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="center">name</th>
+<th align="center">111</th>
+<th align="center">222</th>
+<th align="center">333</th>
+<th align="center">444</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">aaa</td>
+<td align="center">bbb</td>
+<td align="center">ccc</td>
+<td align="center">ddd</td>
+<td align="center">eee</td>
+</tr>
+<tr>
+<td align="center">fff</td>
+<td align="center">ggg</td>
+<td align="center">hhh</td>
+<td align="center">iii</td>
+<td align="center">000</td>
+</tr>
+</tbody></table>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><pre><code class="markdown">- [x] 已完成
 - [ ] 待完成</code></pre>
 
             <hr>
