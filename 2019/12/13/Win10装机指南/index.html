@@ -120,7 +120,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    1.5k 字
+                    2.1k 字
                   </span>&nbsp;
                 
 
@@ -128,7 +128,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      5 分钟
+                      7 分钟
                   </span>&nbsp;
                 
 
@@ -162,9 +162,8 @@
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
             <p align="center">
-    <font face="华文新魏" size="6">小白的Win10装机之路</font>
+    <font face="华文新魏" size="6">小白的Win10装机之路（一）</font>
         </p>
-
 
 <a id="more"></a>
 
@@ -226,14 +225,59 @@
 <li>你将需要重新安装与你的许可证匹配的 Windows 版本</li>
 </ul>
 </blockquote>
-<h3 id="使用安装介质执行-Windows-10-的干净安装"><a href="#使用安装介质执行-Windows-10-的干净安装" class="headerlink" title="使用安装介质执行 Windows 10 的干净安装"></a>使用安装介质执行 Windows 10 的干净安装</h3><ol>
-<li>在工作电脑上，转到 <a href="http://go.microsoft.com/fwlink/p/?LinkID=616447" target="_blank" rel="noopener">Microsoft 软件下载网站</a>，然后选择<strong>立即下载工具</strong>。</li>
+<h3 id="使用安装介质执行-Windows-10-的干净安装"><a href="#使用安装介质执行-Windows-10-的干净安装" class="headerlink" title="使用安装介质执行 Windows 10 的干净安装"></a>使用安装介质执行 Windows 10 的干净安装</h3><h4 id="制作系统镜像盘"><a href="#制作系统镜像盘" class="headerlink" title="制作系统镜像盘"></a>制作系统镜像盘</h4><ol>
+<li>在工作电脑上，转到 <a href="http://go.microsoft.com/fwlink/p/?LinkID=616447" target="_blank" rel="noopener">Microsoft 软件下载网站</a> <a href="http://go.microsoft.com/fwlink/p/?LinkID=616447" target="_blank" rel="noopener">http://go.microsoft.com/fwlink/p/?LinkID=616447</a> ，然后选择<strong>立即下载工具</strong>。</li>
+</ol>
+<p>![1](D:\Veen’s Files\win10\1.png)</p>
+<p>![2](D:\Veen’s Files\win10\2.png)</p>
+<ol start="2">
 <li>在下载完成后，从你的桌面中打开该工具，然后在询问是否要使用工具对设备进行更改时，选择“是”。</li>
 <li>当出现 Windows 10 设置指南时，请接受许可条款和协议。</li>
+</ol>
+<p>![3](D:\Veen’s Files\win10\3.png)</p>
+<ol start="4">
 <li>选择<strong>从其他电脑中创建安装介质（U 盘、DVD 或 ISO 文件）</strong>，然后选择“下一步”。</li>
-<li>选择语言、版本和体系结构（64 位或 32 位）。</li>
+</ol>
+<p>![5](D:\Veen’s Files\win10\5.png)</p>
+<ol start="5">
+<li>选择语言、版本和体系结构（64 位或 32 位），推荐使用64位系统。</li>
+</ol>
+<p>![6](D:\Veen’s Files\win10\6.png)</p>
+<ol start="6">
 <li>按照这些步骤创建安装介质，然后选择“完成”。</li>
 </ol>
+<p>![9](D:\Veen’s Files\win10\9.png)</p>
+<p>![7](D:\Veen’s Files\win10\7.png)</p>
+<p>![8](D:\Veen’s Files\win10\8.png)</p>
+<blockquote>
+<p>此时系统镜像已经写入U盘，此时开始准备重新装机，请确认重要文件已经备份完毕。</p>
+</blockquote>
+<h4 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h4><blockquote>
+<p>在安装系统之前请确认电脑的启动模式是UEFI模式。</p>
+<ul>
+<li>在计算机启动时连续按特定键进入EFI设置。通常台式机为Del，笔记本电脑为F2。按Esc键将提供完整菜单，然后选择BIOS设置。</li>
+<li>在“Boot”选项卡下找到Legacy / UEFI引导模式配置。禁用（<em>Disabled</em>）Legacy并启用（<em>Enabled</em>）UEFI。</li>
+<li>按F10保存设置，然后退出。</li>
+</ul>
+</blockquote>
+<ol>
+<li>接下来重启电脑，在重启之后按下选择启动介质的快捷键，选择“<strong>USB Storage Device</strong>”。</li>
+</ol>
+<blockquote>
+<p>常见品牌的选择启动介质的快捷键：联想和戴尔是F12；华硕：F8 其他的：百度一下，你就知道。</p>
+</blockquote>
+<ol start="2">
+<li>此时U盘引导系统进入Win10安装程序，请选择最符合你的需求的选项，然后选择“下一步”。（家庭版正版重装请选择家庭版，需要重装专业版可选择专业版，在之后一篇推送中提供专业版破解指南） </li>
+<li>选择“立即安装”，然后选中“我接受”框。</li>
+<li>选择“下一步”，然后选择“自定义: 仅安装 Windows (高级)”。</li>
+<li>你的设备将显示驱动器和分区的列表，删除/格式化系统盘，多个硬盘用户请勿删除有重要数据的硬盘。</li>
+<li>选择“删除”系统盘所有分区。指示“未分配空间”的驱动器除外。完成后，仅应保留驱动器 0 未分配空间。（双SSD用户可能为驱动器1，因此安装前最好取出第二块硬盘）</li>
+<li>选择“下一步”，（此时如果提示硬盘格式错误，请使用命令行diskpart工具 进行修复，参照文末TIPS）Windows 安装程序屏幕将显示“正在安装 Windows”。安装完成后，设备可能提示重启，在有倒计时的界面不要自行点击重启，等待自动重启。</li>
+<li>之后就是进入系统初始界面，按照提示进行设置即可。</li>
+<li>进入系统后点击更新，更新所有系统驱动。</li>
+</ol>
+<p><img src="C:%5CUsers%5CVEEN_ZHOU%5CPictures%5C1.png" srcset="/img/loading.gif" alt="1"></p>
+<p><img src="C:%5CUsers%5CVEEN_ZHOU%5CPictures%5C2.png" srcset="/img/loading.gif" alt="2"></p>
 <h2 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS"></a>TIPS</h2><p>重装时出现硬盘分区表错误可以使用命令行diskpart工具进行磁盘修复、格式转换。在重装系统界面按“shift+F10”调出命令提示符，输入diskpart进入分区程序，部分命令说明如下：</p>
 <p><strong><code>list disk</code></strong>：显示本机安装的硬盘，编号为0、1、2……只有一块硬盘的用户只有“磁盘0”</p>
 <p><strong><code>select disk X</code></strong>：选择上面列出的硬盘</p>
