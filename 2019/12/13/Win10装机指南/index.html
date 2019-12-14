@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="Veen">
+  <meta name="keywords" content="">
+  <title>Win10装机指南 ~ Veen</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Veen</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期五, 十二月 13日 2019, 11:59 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    1.5k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      5 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <ul>
+<li>没有什么问题是重启解决不了的，如果不行就重启两次，如果实在不行就重装系统吧。</li>
+<li>除了电脑硬件问题，几乎所有的电脑问题都可以通过重装系统，重新配置电脑驱动、软件解决。</li>
+<li>在初次使用一些软件时系统环境变量等不能正确配置，造成的软件索引问题过多，最简单有效的方法就是重装系统。</li>
+<li>原装的BUG10系统经常会出现蓝屏死机情况，同时随着使用时间的推移系统会越来越慢，这些问题也可以通过重装系统解决。</li>
+<li>重装系统其实很简单，小白也能轻松重装，看完这篇推送别找了装系统了吧（逃）。</li>
+</ul>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p><strong>重装系统广义上也可以分为：</strong></p>
+</blockquote>
+<ol>
+<li><strong>原系统重置</strong></li>
+<li><strong>系统完全重装</strong></li>
+</ol>
+<blockquote>
+<p><strong>Win10磁盘分区表及文件格式</strong></p>
+</blockquote>
+<h3 id="磁盘分区表"><a href="#磁盘分区表" class="headerlink" title="磁盘分区表"></a>磁盘分区表</h3><ol>
+<li><p><strong>主引导记录MBR（Master Boot Record）</strong></p>
+<p>MBR由3部分组成，包括主引导代码，磁盘分区表和磁盘签名。分区表最多可容纳Windows中主分区的4个条目，也就是最多支持四个主分区。</p>
+<p>如果将磁盘初始化为MBR，则无论磁盘有多大，都只能使用2TB或16TB的硬盘容量。如果磁盘使用传统的512B对齐扇区，则只能使用2TB。如果使用4K对齐扇区，则可以使用16TB。</p>
+</li>
+<li><p><strong>GUID分区表GPT（GUID Partition Table）</strong></p>
+<p>GUID分区表由保护性MBR组成，用于防止基于MBR的磁盘实用程序误识别并可能覆盖GPT磁盘；<strong>主要GUID分区表标头</strong>（记录了其自身的大小、位置以及辅助GPT标头），<strong>主GUID分区条目数组</strong>，<strong>备份GUID分区条目数组</strong>和<strong>备份GUID分区表标头</strong>。</p>
+<p>在Windows中，GUID分区表最多可以包含128个分区条目。</p>
+<p>XP及以下系统只能使用MBR分区格式的磁盘，当前Windows操作系统都可以使用GPT分区格式磁盘读写数据。如果主板仅支持Legacy启动，只能从MBR启动Windows，当主板支持UEFI启动时，Windows的64位系统支持从GPT启动。</p>
+</li>
+</ol>
+<h3 id="文件格式"><a href="#文件格式" class="headerlink" title="文件格式"></a>文件格式</h3><p>Windows操作系统支持 NTFS, FAT32, and exFAT三种不同文件系统，在Win10装机时，硬盘格式一般选择NTFS，目前也有在exFAT文件系统上运行的Win10系统。</p>
+<ol>
+<li>NTFS是目前Windows系统中一种现代文件系统，目前使用最广泛，内置的硬盘大多数都是NTFS格式。</li>
+<li>FAT32是一种相对老旧的文件系统，不能像NTFS格式支持很多现代文件格式的属性，但对于不同系统平台具有良好的兼容性，可以在Linux、Mac或Android系统平台上通用。</li>
+<li>exFAT是FAT32文件格式的替代品，很多设备和操作系统都支持该文件系统。</li>
+</ol>
+<h2 id="原系统重置"><a href="#原系统重置" class="headerlink" title="原系统重置"></a>原系统重置</h2><p><img src="D:%5CBlog%5Csource%5Cimage%5Cimage-20191213232016958.png" srcset="/img/loading.gif" alt="image-20191213232016958"></p>
+<p>有三个选项能够初始化电脑。</p>
+<ul>
+<li>选项 1：依次选择“开始” &gt;“设置” &gt;“更新和安全” &gt;“恢复”。在“初始化此电脑”下，选择“开始”。<a href="ms-settings:recovery?activationSource=SMC-IA-4026528" target="_blank" rel="noopener">打开“恢复”设置</a>。</li>
+<li>选项 2：重启电脑以访问登录屏幕，然后长按 Shift 键，同时依次选择屏幕右下角的“电源”图标 &gt;“重启”。在计算机重启后，依次选择“疑难解答”&gt;“初始化此电脑”。</li>
+<li>选项 3：选择“开始”，然后长按 Shift 键，同时依次选择“电源”图标 &gt;“重启”将计算机重启到恢复模式。在计算机重启后，依次选择“疑难解答”&gt;“初始化此电脑”。</li>
+</ul>
+<blockquote>
+<p>重置电脑是重置所有用户安装的软件，可以选择保存自己的文档，在重置时不会完全删除所有驱动。</p>
+<p>全新安装会删除所有的用户数据，在安装之前也可以保存文档，全新安装后需要重新安装驱动。</p>
+</blockquote>
+<h2 id="系统完全重置"><a href="#系统完全重置" class="headerlink" title="系统完全重置"></a>系统完全重置</h2><blockquote>
+<p>本文教程不使用第三方工具进行装机，如需要第三方工具的装机可以百度“微PE”。</p>
+</blockquote>
+<h3 id="开始之前"><a href="#开始之前" class="headerlink" title="开始之前"></a>开始之前</h3><p>确保你的数据已经全部备份，在完全重置的系统安装中建议完全格式化系统盘。对于双硬盘的用户，建议在重装系统前将其取出。</p>
+<blockquote>
+<p>对于正版系统的安装：</p>
+<ul>
+<li>确保 Windows 10 已激活</li>
+<li>在重新安装 Windows 之前，你需要将 Microsoft 帐户链接到数字许可证</li>
+<li>如果你对电脑进行了重大的硬件更换，需要重新激活 Windows 10</li>
+<li>你将需要重新安装与你的许可证匹配的 Windows 版本</li>
+</ul>
+</blockquote>
+<h3 id="使用安装介质执行-Windows-10-的干净安装"><a href="#使用安装介质执行-Windows-10-的干净安装" class="headerlink" title="使用安装介质执行 Windows 10 的干净安装"></a>使用安装介质执行 Windows 10 的干净安装</h3><ol>
+<li>在工作电脑上，转到 <a href="http://go.microsoft.com/fwlink/p/?LinkID=616447" target="_blank" rel="noopener">Microsoft 软件下载网站</a>，然后选择<strong>立即下载工具</strong>。</li>
+<li>在下载完成后，从你的桌面中打开该工具，然后在询问是否要使用工具对设备进行更改时，选择“是”。</li>
+<li>当出现 Windows 10 设置指南时，请接受许可条款和协议。</li>
+<li>选择<strong>从其他电脑中创建安装介质（U 盘、DVD 或 ISO 文件）</strong>，然后选择“下一步”。</li>
+<li>选择语言、版本和体系结构（64 位或 32 位）。</li>
+<li>按照这些步骤创建安装介质，然后选择“完成”。</li>
+</ol>
+<h2 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS"></a>TIPS</h2><p>重装时出现硬盘分区表错误可以使用命令行diskpart工具进行磁盘修复、格式转换。在重装系统界面按“shift+F10”调出命令提示符，输入diskpart进入分区程序，部分命令说明如下：</p>
+<p><strong><code>list disk</code></strong>：显示本机安装的硬盘，编号为0、1、2……只有一块硬盘的用户只有“磁盘0”</p>
+<p><strong><code>select disk X</code></strong>：选择上面列出的硬盘</p>
+<p><strong><code>clean</code></strong>：清空选中硬盘原有分区信息</p>
+<p><strong><code>convert gpt</code></strong>：将分区格式转换为GPT</p>
+<p><strong><code>list partition</code></strong>：显示已有分区</p>
+<p><strong><code>create partition efi/msr/primary size=n</code></strong>：新建EFI/MSR/主分区，单位为MB</p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E7%B3%BB%E7%BB%9F">系统</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+  <div id="vcomments" style="width: 90%; margin: 0 auto;"></div>
+  <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
+    var notify = 'false' === true;
+    var verify = 'true' === true;
+    var oldLoad = window.onload;
+    window.onload = function () {
+      new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        app_id: "w8VaEP3iTgYj1EnQ7TsHSp6k-gzGzoHsz",
+        app_key: "bB6pIAfcqCjPz7ujeqh5nVut",
+        placeholder: "说点什么？",
+        avatar: "retro",
+        meta: ['nick', 'mail', 'link'],
+        pageSize: "10",
+      });
+      oldLoad && oldLoad();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+  
+</footer>
+<footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    <font size="3" face="" color="#2f4154">
+      <p class="copyright text-muted">
+        Copyright © Veen 2019
+        <br>
+        Find me on <a href="https://github.com/Veenxz" target="_blank">GitHub</a> |
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">
+      <img src="https://d33wubrfki0l68.cloudfront.net/3031be41e8753c70508aa88e84ed8f4f653f157e/d2d9a/images/cc-by-nc-sa.svg" srcset="/img/loading.gif" alt="Creative Commons">
+      </a>
+      </p>
+      </font>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+
+  <footer class="mt-5">
+    <div class="text-center py-3">  
+    
+    
+    </div>
+
+
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  ');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Win10装机指南&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
