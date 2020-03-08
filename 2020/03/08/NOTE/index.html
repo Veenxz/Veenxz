@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="Veen">
+  <meta name="keywords" content="">
+  <title>NOTE ~ Veen</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
+
+<link rel="stylesheet" href="/css/main.css"  >
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Veen</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期日, 三月 8日 2020, 11:35 中午
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    445 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      2 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="elbow"><a href="#elbow" class="headerlink" title="elbow"></a>elbow</h1><blockquote>
+<p>terminal</p>
+</blockquote>
+<pre><code>fluentMeshToFoam elbow.mshsim
+
+ //constant\poluMesh mesh location
+
+foamCleanTutorials cleanDir
+touch case.foam</code></pre><blockquote>
+<p>boundary condition<br>type            empty; 2D</p>
+</blockquote>
+<p>type            noSlip;</p>
+<p>type            fixedValue;</p>
+<p>value           uniform 0;</p>
+<blockquote>
+<p>flies<br>flie 0 boundary</p>
+</blockquote>
+<p>flie constant<br>transportProperties nu<br>turbulenceProperties method RAS LES laminar</p>
+<p>flie system </p>
+<blockquote>
+<p>units</p>
+<p>[kg,m,s,k…]</p>
+</blockquote>
+<blockquote>
+<p>solve<br>steady: deltaT          1;<br>writeFormat     binary\ascii;</p>
+</blockquote>
+<h1 id="TShspe-TEST"><a href="#TShspe-TEST" class="headerlink" title="TShspe_TEST"></a>TShspe_TEST</h1><blockquote>
+<p>constant    /boundary    /nu    /laminar<br>0    /p    /U</p>
+</blockquote>
+<pre><code>blockMesh
+touch case.foam
+simpleFoam</code></pre><h1 id="arota-transient"><a href="#arota-transient" class="headerlink" title="arota_transient"></a>arota_transient</h1><pre><code>fluent3DMeshToFoam fluent.msh</code></pre><blockquote>
+<p>/p<br>type            codedFixedValue;<br>changable pressure with time on boundary</p>
+</blockquote>
+<p>“OUTLET.*”=OUTLET1 OUTLET2 OUTLET3…</p>
+<blockquote>
+<p>/controlDict<br>important: deltaT<br>writeFormat     binary;</p>
+</blockquote>
+<pre><code>pimpleFoam
+foamListTimes -rm  //delete previous solution data</code></pre><p>postProcessing residuals data</p>
+<p>foamMonitor -l postProcessing/residuals/0/residuals.dat</p>
+<h1 id="sylinder-TEST"><a href="#sylinder-TEST" class="headerlink" title="_sylinder_TEST"></a>_sylinder_TEST</h1><pre><code>inGroups        List&lt;word&gt; 1(mywall);
+
+empty cyclic cyclicAMI wedge symmetry &gt; #includeEtc &quot;caseDicts/setConstraintTypes&quot;
+
+internalField   uniform (1 0 0);
+
+pimpleFoam &amp;&gt; log
+
+nOuterCorrectors    15&gt;&gt;1; pimple to piso
+
+foamMonitor yrange &quot;[0 1]&quot;</code></pre><p>#_TaylorCouettte_steadyState</p>
+<pre><code>    &quot;.*&quot;
+    {
+        type zeroGradient;
+    }</code></pre><pre><code>&gt; foamGet residuals
+functions
+{
+    #includeFunc residuals
+}</code></pre><pre><code>decomposePar 
+
+mpirun -np 4 simpleFoam -parallel
+
+</code></pre><h1 id="cyclic-RANS"><a href="#cyclic-RANS" class="headerlink" title="cyclic_RANS"></a>cyclic_RANS</h1><p>👉<br>wall function<br>    type    kqRWallFunction;<br>    value    $internalField;</p>
+<p>./Allrun<br>decomposePar -force<br>mpirun -np 4 simpleFoam -parallel<br>reconstructPar</p>
+<h1 id="dynMesh"><a href="#dynMesh" class="headerlink" title="_dynMesh"></a>_dynMesh</h1><p>dynamicMeshDict   movingwall nessary file</p>
+<p>pointDisplacement</p>
+<h1 id="livingRoom"><a href="#livingRoom" class="headerlink" title="_livingRoom"></a>_livingRoom</h1><p>topoSet<br>        name    window;<br>        type    faceSet;<br>        action  new;<br>        source  boxToFace;<br>        sourceInfo<br>        {<br>            box (0.5 1.0 -0.001)(2.5 2.0 0.001);<br>        }</p>
+<p>p_rgh</p>
+<pre><code>type        zerogradient;
+    type            fixedFluxPressure;
+    value           uniform 0;
+
+equationOfState perfectGas;</code></pre><p>buoyantSimpleFoam</p>
+<h1 id="BernardCells"><a href="#BernardCells" class="headerlink" title="_BernardCells"></a>_BernardCells</h1><p>buoyantPimpleFoam</p>
+<p>–&gt; FOAM FATAL ERROR:<br>LHS and RHS of - have different dimensions<br>     dimensions : [0 2 -2 0 0 0 0] - [1 -1 -2 0 0 0 0]</p>
+<h1 id="rhiCentralFoam"><a href="#rhiCentralFoam" class="headerlink" title="rhiCentralFoam"></a>rhiCentralFoam</h1><h1 id="rhoSimpleFoam"><a href="#rhoSimpleFoam" class="headerlink" title="rhoSimpleFoam"></a>rhoSimpleFoam</h1><pre><code>mu          0;
+
+sutherland  mu relacted with T
+internalField   uniform $Uinlet;
+internalField   uniform $pOut;
+
+type           fixedMean;  //face average
+type       totalTemperature;
+type turbulentIntensityKineticEnergyInlet;</code></pre><h1 id="VOF"><a href="#VOF" class="headerlink" title="VOF"></a>VOF</h1><p>type           constantAlphaContactAngle;<br>interFoam</p>
+<pre><code>pRefCell    0;
+pRefValue           0;</code></pre><h1 id="Mixture"><a href="#Mixture" class="headerlink" title="Mixture"></a>Mixture</h1><p>driftFluxFoam</p>
+<p>relativeVelocityModel simple; //relative Velocity</p>
+<h1 id="find-solvers"><a href="#find-solvers" class="headerlink" title="find solvers"></a>find solvers</h1><p>OpenFOAM/OpenFOAM-7/applications/solvers/xx/xx.c &gt; discriptions</p>
+<p>OKSS2</p>
+<p>laplacianFoam.c</p>
+<pre><code>Application
+    laplacianFoam
+
+Description
+    Solves a simple Laplace equation, e.g. for thermal diffusion in a solid.
+
+            fvScalarMatrix TEqn
+            (
+                fvm::ddt(T) - fvm::laplacian(DT, T)
+             ==
+                fvOptions(T)
+            );
+</code></pre><p>scalarTransportFoam</p>
+<pre><code>Application
+    scalarTransportFoam
+
+Description
+    Solves the steady or transient transport equation for a passive scalar.
+
+            fvScalarMatrix TEqn
+            (
+                fvm::ddt(T)
+              + fvm::div(phi, T)
+              - fvm::laplacian(DT, T)
+             ==
+                fvOptions(T)
+            );
+</code></pre><h1 id="Energe-equation"><a href="#Energe-equation" class="headerlink" title="Energe equation"></a>Energe equation</h1><p>name.c&gt;Make&gt;flies&gt;name.C name</p>
+<p>$ wmake</p>
+<blockquote>
+<p>name.c</p>
+</blockquote>
+<pre><code>    volScalarField T
+    {
+    IOobject
+    {
+        &quot;T&quot;,
+            runTime.timeName(),
+            mesh,
+            IOobject::MUST_READ,
+            IOobject::AUTO_WRITE
+    },
+        mesh
+    };
+
+    dimensionedScalar DT
+    {
+        &quot;DT&quot;,
+        dimensionSet(0,2,-1,0,0),
+        0.0001
+    };
+
+
+    fvScalarMatrix TEqn
+    {
+        fvm::ddt(T)
+      + fvc::div(phi, T)
+      - fvc::laplacian(DT, T)
+    };
+</code></pre><h1 id="projectionFoam"><a href="#projectionFoam" class="headerlink" title="projectionFoam"></a>projectionFoam</h1><p>projectionFoam.C</p>
+<p>EXE = $(FOAM_USER_APPBIN)/projectionFoam</p>
+<p>phi = fvc::interpolate(U) &amp; mesh.Sf(); volume to surface</p>
+<h1 id="dym"><a href="#dym" class="headerlink" title="dym"></a>dym</h1><pre><code>    &gt;pisoDyMFoam.C
+    #include &quot;dynamicFvMesh.H&quot;
+    #include &quot;createDynamicFvMesh.H&quot;
+    mesh.update();
+    &gt;UEqn
+    phi = phi - mesh.phi();
+
+    &gt;options
+    -ldynamicFvMesh \
+    -ltopoChangerFvMesh \
+    -I$(LIB_SRC)/dynamicFvMesh/lnInclude \</code></pre><p>missing operator &gt;options environment variables</p>
+<h1 id="EMMS"><a href="#EMMS" class="headerlink" title="EMMS"></a>EMMS</h1><h1 id="BASUOQU"><a href="#BASUOQU" class="headerlink" title="BASUOQU"></a>BASUOQU</h1><p>pimpleFoam -listScalarBCs -listVectorBCs \list boundary type</p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+  <div id="vcomments" style="width: 90%; margin: 0 auto;"></div>
+  <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
+    var notify = 'false' === true;
+    var verify = 'true' === true;
+    var oldLoad = window.onload;
+    window.onload = function () {
+      new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        app_id: "w8VaEP3iTgYj1EnQ7TsHSp6k-gzGzoHsz",
+        app_key: "bB6pIAfcqCjPz7ujeqh5nVut",
+        placeholder: "说点什么？",
+        avatar: "retro",
+        meta: ['nick', 'mail', 'link'],
+        pageSize: "10",
+      });
+      oldLoad && oldLoad();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+  
+</footer>
+<footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    <font size="3" face="" color="#2f4154">
+      <p class="copyright text-muted">
+        Copyright © Veen 2019
+        <br>
+        Find me on <a href="https://github.com/Veenxz" target="_blank">GitHub</a> |
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">
+      <img src="https://d33wubrfki0l68.cloudfront.net/3031be41e8753c70508aa88e84ed8f4f653f157e/d2d9a/images/cc-by-nc-sa.svg" srcset="/img/loading.gif" alt="Creative Commons">
+      </a>
+      </p>
+      </font>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+
+  <footer class="mt-5">
+    <div class="text-center py-3">  
+    
+    
+    </div>
+
+
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+    <!-- Baidu Analytics -->
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f3e155aa4250c21a7d6810f989a617ce";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  ');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "NOTE&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
