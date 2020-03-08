@@ -21,7 +21,9 @@
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
 <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
 <link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
 
 
   <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
@@ -32,7 +34,7 @@
   <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
 
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 
 <body>
@@ -120,7 +122,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    218 字
+                    931 字
                   </span>&nbsp;
                 
 
@@ -128,7 +130,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      1 分钟
+                      4 分钟
                   </span>&nbsp;
                 
 
@@ -161,19 +163,29 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <p>本文用于记录Markdown常用语法。</p>
+            <h1 id="Hello-Markdown"><a href="#Hello-Markdown" class="headerlink" title="Hello Markdown"></a>Hello Markdown</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>本文用于记录Markdown常用语法。</p>
+<p><strong>Markdown</strong> is created by <a href="http://daringfireball.net/" target="_blank" rel="noopener">Daring Fireball</a>; the original guideline is <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank" rel="noopener">here</a>. Its syntax, however, varies between different parsers or editors. <strong>Typora</strong> is using [GitHub Flavored Markdown][GFM].</p>
+<p>每个符号后加一个空格才能正确渲染，推荐在进行写作时切换到源代码模式。</p>
 <a id="more"></a>
 
-<h2 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><pre><code class="markdown"># 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题</code></pre>
-<h3 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h3><pre><code class="markdown">&gt;这是一个文字块
+<p>[toc]</p>
+<h2 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h2><h3 id="段落（-ctrl-0）"><a href="#段落（-ctrl-0）" class="headerlink" title="段落（ ctrl+ 0）"></a>段落（ <code>ctrl</code>+ <code>0</code>）</h3><p>在Typora中通过回车 <code>Return</code>来创建新的段落。</p>
+<p> <code>Shift</code> + <code>Return</code> 可用于创建单个换行符。</p>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><pre><code class="markdown"># 一级标题（ `ctrl`+ `1`）
+## 二级标题（ `ctrl`+ `2`）
+### 三级标题（ `ctrl`+ `3`）
+#### 四级标题（ `ctrl`+ `4`）
+##### 五级标题（ `ctrl`+ `5`）
+###### 六级标题（ `ctrl`+ `6`）</code></pre>
+<h3 id="块引用（-ctrl-Shift-Q）"><a href="#块引用（-ctrl-Shift-Q）" class="headerlink" title="块引用（ ctrl+ Shift+ Q）"></a>块引用（ <code>ctrl</code>+ <code>Shift</code>+ <code>Q</code>）</h3><pre><code class="markdown">&gt; 这是一个文字块
 &gt;
 
-&gt;这是第二个文字块</code></pre>
+&gt; 这是第二个文字块
+&gt;
+
+&gt;## 这是添加在二级标题上的文字块
+
+&gt;&gt; 这是二级引用</code></pre>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><pre><code class="markdown"># 无序列表
 * red
 * blue
@@ -183,13 +195,25 @@
 1. red
 2. blue
 3. green</code></pre>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><pre><code class="markdown">​```
+<h3 id="代码块（-ctrl-Shift-K）"><a href="#代码块（-ctrl-Shift-K）" class="headerlink" title="代码块（ ctrl+ Shift+ K）"></a>代码块（ <code>ctrl</code>+ <code>Shift</code>+ <code>K</code>）</h3><pre><code class="markdown"># 普通代码块
+​```
 Hello World!
-​```</code></pre>
-<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>$$<br>\frac{\partial p}{\partial x}=0<br>$$</p>
-<pre><code class="markdown">$$
+​```
+# 根据语言高亮代码块
+​```ruby
+require &#39;redcarpet&#39;
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html</code></pre>
+<pre><code>### 公式（ `ctrl`+ `Shift`+ `M`）
+
+$$
 \frac{\partial p}{\partial x}=0
-$$</code></pre>
+$$
+
+​```markdown
+$$
+\frac{\partial p}{\partial x}=0
+$$</code></pre><p>You can find more details <a href="https://support.typora.io/Math/" target="_blank" rel="noopener">here</a>.</p>
 <h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ol>
 <li><h4 id="极简方式"><a href="#极简方式" class="headerlink" title="极简方式"></a>极简方式</h4><pre><code class="markdown">name | 价格 |  数量  
 -|-|-
@@ -256,8 +280,6 @@ fff | ggg| hhh | iii | 000|</code></pre>
 :-: | :-: | :-: | :-: | :-:
 aaa | bbb | ccc | ddd | eee| 
 fff | ggg| hhh | iii | 000|</code></pre>
-</li>
-</ol>
 <table>
 <thead>
 <tr>
@@ -283,8 +305,79 @@ fff | ggg| hhh | iii | 000|</code></pre>
 <td align="center">000</td>
 </tr>
 </tbody></table>
-<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><pre><code class="markdown">- [x] 已完成
+</li>
+</ol>
+<h3 id="注脚"><a href="#注脚" class="headerlink" title="注脚"></a>注脚</h3><pre><code class="markdown">You can create footnotes like this[^1].
+
+[^1]: Here is the *text* of the **footnote**.</code></pre>
+<h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><pre><code class="markdown">- [x] 已完成
 - [ ] 待完成</code></pre>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p> <code>***</code> 或者<code>---</code>都可以插入一条分割线。</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>输入<code>[toc]</code>用于创建目录。</p>
+<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p>通过如下代码可以便捷的绘制流程图：</p>
+<pre><code class="markdown">st=&gt;start: Start
+op=&gt;operation: Your Operation
+cond=&gt;condition: Yes or No?
+e=&gt;end
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op</code></pre>
+<pre><code class="flow">st=&gt;start: Start
+op=&gt;operation: Your Operation
+cond=&gt;condition: Yes or No?
+e=&gt;end
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op</code></pre>
+<h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><pre><code class="markdown"># 原生方法
+This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+
+[This link](http://example.net/) has no title attribute.
+
+# HTML
+&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no
+
+&#39;按住ctrl可以在浏览器中访问链接&#39;
+
+# 插入URLs
+例如插入邮箱&lt;veenzhou@gmail.com&gt;
+有的网址也能直接识别，例如www.google.com</code></pre>
+<h3 id="引用链接"><a href="#引用链接" class="headerlink" title="引用链接"></a>引用链接</h3><pre><code class="markdown">This is [an example][id] reference-style link.
+
+Then, anywhere in the document, you define your link label on a line by itself like this:
+
+[id]: http://example.com/  &quot;Optional Title Here&quot;</code></pre>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><pre><code class="markdown">![这个文字我也不知道是干啥的](/path/to/img.jpg)</code></pre>
+<h3 id="文字样式"><a href="#文字样式" class="headerlink" title="文字样式"></a>文字样式</h3><pre><code class="markdown">*此文本为斜体。*
+_此文本也是。_
+
+**此文本为粗体。**
+__此文本也是__
+
+***此文本是斜体加粗体。***
+**_或者这样。_**
+*__这个也是！__*
+
+~~此文本为删除线效果。~~
+
+行内代码Use the `printf()` function.
+
+&lt;u&gt;下划线&lt;/u&gt;
+
+表情符号:smile:</code></pre>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML基本语法都支持，之后有时间再出教程吧。</p>
+<p>You can use HTML to style content what pure Markdown does not support. For example, use <code>&lt;span style=&quot;color:red&quot;&gt;this text is red&lt;/span&gt;</code> to add text with red color.</p>
+<h3 id="Embed-Contents"><a href="#Embed-Contents" class="headerlink" title="Embed Contents"></a>Embed Contents</h3><p>Some websites provide iframe-based embed code which you can also paste into Typora. For example:</p>
+<iframe height='265' scrolling='no' title='Fancy Animated SVG Menu' src='http://codepen.io/jeangontijo/embed/OxVywj/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+
+<pre><code class="Markdown">&lt;iframe height=&#39;265&#39; scrolling=&#39;no&#39; title=&#39;Fancy Animated SVG Menu&#39; src=&#39;http://codepen.io/jeangontijo/embed/OxVywj/?height=265&amp;theme-id=0&amp;default-tab=css,result&amp;embed-version=2&#39; frameborder=&#39;no&#39; allowtransparency=&#39;true&#39; allowfullscreen=&#39;true&#39; style=&#39;width: 100%;&#39;&gt;&lt;/iframe&gt;</code></pre>
+<h3 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h3><p>You can use the <code>&lt;video&gt;</code> HTML tag to embed videos. For example:</p>
+<pre><code class="Markdown">&lt;video src=&quot;xxx.mp4&quot; /&gt;</code></pre>
+<h3 id="Other-HTML-Support"><a href="#Other-HTML-Support" class="headerlink" title="Other HTML Support"></a>Other HTML Support</h3><p>You can find more details <a href="https://support.typora.io/HTML/" target="_blank" rel="noopener">here</a>.</p>
 
             <hr>
           </div>

@@ -21,7 +21,9 @@
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
 <link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
 <link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
+
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
 
 
   <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
@@ -32,7 +34,7 @@
   <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
 
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 
 <body>
@@ -120,7 +122,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    567 字
+                    603 字
                   </span>&nbsp;
                 
 
@@ -167,97 +169,103 @@
 <blockquote>
 <p>Git Bash登录</p>
 </blockquote>
-<pre><code class="bash">$ git config --global user.name “Your Name” //（注意前边是“- -global”，有两个横线） 
+<pre><code class="bash">$ git config --global user.name “Your Name”     #（注意前边是“- -global”，有两个横线） 
 
 $ git config --global user.email “email@example.com”</code></pre>
+<blockquote>
+<p>Git SSH配置</p>
+</blockquote>
+<pre><code class="bash">ssh-keygen -t rsa -C “email@example.com”
+#全部回车
+#打开.ssh文件夹下的id-rsa.pub文件的内容，复制到ssh key</code></pre>
 <blockquote>
 <p>Git Bash创建仓库</p>
 </blockquote>
 <pre><code class="bash">$ git init newrepo
 
-$ git add README //将目录下以README文件提交到仓库中
+$ git add README     #将目录下以README文件提交到仓库中
 
-$ git commit -m &#39;初始化项目版本&#39;//备注功能
+$ git commit -m &#39;初始化项目版本&#39;    #备注功能
 
-$ git clone &lt;repo&gt; &lt;directory&gt; //repo:Git 仓库 directory:本地目录。
+$ git clone &lt;repo&gt; &lt;directory&gt;     #repo:Git 仓库 directory:本地目录。
 
-$ git status //查看项目的当前状态</code></pre>
+$ git status     #查看项目的当前状态</code></pre>
 <blockquote>
 <p>git add</p>
 </blockquote>
-<pre><code class="bash">$ git add . //他会监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。
+<pre><code class="bash">$ git add .     #他会监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。
 
-$ git add -u //他仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）
+$ git add -u     #他仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add --update的缩写）
 
-$ git add -A //是上面两个功能的合集（git add --all的缩写）</code></pre>
+$ git add -A     #是上面两个功能的合集（git add --all的缩写）</code></pre>
 <blockquote>
 <p>Git Bash分支管理</p>
 </blockquote>
-<pre><code class="bash">$ git branch (branchname) //创建分支命令
+<pre><code class="bash">$ git branch (branchname)     #创建分支命令
 
-$ git checkout (branchname) //切换分支命令
+$ git checkout (branchname)     #切换分支命令
 
-$ git merge //合并分支
+$ git merge     #合并分支
 
-$ git branch //列出分支
+$ git branch     #列出分支
 
-$ git branch -d (branchname) //删除分支</code></pre>
+$ git branch -d (branchname)     #删除分支</code></pre>
 <blockquote>
 <p>Git Bash查看提交历史</p>
 </blockquote>
 <pre><code class="bash">$ git log
 
-$ git log --oneline //用 --oneline 选项来查看历史记录的简洁的版本</code></pre>
+$ git log --oneline     #用 --oneline 选项来查看历史记录的简洁的版本</code></pre>
 <blockquote>
 <p>Git Bash创建标签</p>
 </blockquote>
-<pre><code class="bash">$ git tag -a v1.0 //创建标签
+<pre><code class="bash">$ git tag -a v1.0     #创建标签
 
-$ git tag -d v1.1 //删除标签
+$ git tag -d v1.1     #删除标签
 
-$ git show v1.0 //查看此版本修改内容</code></pre>
+$ git show v1.0     #查看此版本修改内容</code></pre>
 <blockquote>
 <p>Git Bash提交修改</p>
 </blockquote>
 <ul>
 <li>远程仓库未创建</li>
 </ul>
-<pre><code class="bash">git init //初始化一只本地仓库（或者基于初始化仓库建立项目vue init webpack demoxxxx）
+<pre><code class="bash">git init     #初始化一只本地仓库（或者基于初始化仓库建立项目vue init webpack demoxxxx）
 
-git status //查看状态
+git status     #查看状态
 
-git add -A //提交所有文件改动
+git add -A     #提交所有文件改动
 
-git remote add origin ssh地址 // 链接远程仓库步骤1
+git remote add origin ssh地址     # 链接远程仓库步骤1
 
-git push -u origin master //链接远程仓库步骤2
+git push -u origin master     #链接远程仓库步骤2
 
-git add -A //提交所有文件改动
+git add -A     #提交所有文件改动
 
-git status //查看状态
+git status     #查看状态
 
-git commit -m &quot;xx&quot; //备注功能
+git commit -m &quot;xx&quot;     #备注功能
 
-git status //查看状态
+git status     #查看状态
 
-git pull origin master //拉最新代码 （下载）
+git pull origin master     #拉最新代码 （下载）
 
-git push origin master //推送到远程 （上传）</code></pre>
+git push origin master     #推送到远程 （上传）</code></pre>
 <hr>
 <ul>
 <li>远程仓库已创建：</li>
 </ul>
-<pre><code class="bash">git clone ssh地址 //关联远程
+<pre><code class="bash">git clone ssh地址     #关联远程
 
-git remote add origin ssh地址 // 链接远程仓库步骤1
+git remote add origin ssh地址     #链接远程仓库步骤1
 
-git pull origin master //拉最新代码 （下载）
+git pull origin master     #拉最新代码 （下载）
 
-git add -A //提交所有文件改动
+git add -A     #提交所有文件改动
 
-git commit -m &quot;xx&quot; //备注功能
+git commit -m &quot;xx&quot;     #备注功能
 
-git push origin master //推送到远程 （上传）</code></pre>
+git push origin master     #推送到远程 （上传）</code></pre>
 
             <hr>
           </div>
