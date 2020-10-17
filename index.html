@@ -12,37 +12,45 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
   <meta name="description" content="">
   <meta name="author" content="Veen">
   <meta name="keywords" content="">
   <title>Veen</title>
 
-  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
-<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
-<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
-<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
-
-  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css"  >
-
-<link rel="stylesheet" href="/css/main.css"  >
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
 
 
-  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
 
 
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 100vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Veen</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -56,32 +64,47 @@
         
           
           
+          
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
           </li>
         
           
           
+          
           <li class="nav-item">
-            <a class="nav-link" href="/archives/">Archives</a>
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
           </li>
         
           
           
+          
           <li class="nav-item">
-            <a class="nav-link" href="/categories/">Categories</a>
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
           </li>
         
           
           
+          
           <li class="nav-item">
-            <a class="nav-link" href="/tags/">Tags</a>
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
           </li>
         
           
           
+          
           <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
           </li>
         
         
@@ -93,16 +116,13 @@
       </ul>
     </div>
   </div>
-
-
 </nav>
 
-    <div class="view intro-2" id="background"
-         style="background: url('/img/cinque-terre.jpg')no-repeat center center;
-           background-size: cover;
-           background-attachment: fixed;">
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -112,6 +132,10 @@
           </div>
 
           
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
         </div>
       </div>
     </div>
@@ -120,7 +144,8 @@
   <main>
     
       <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
+        <div class="py-5" id="board"
+          style=margin-top:0>
           
           <div class="container">
             <div class="row">
@@ -128,25 +153,26 @@
                 
 
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/04/02/Test-image/">
-        <p class="h4 index-header">Test image</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/04/02/Test-image/">Test image</a>
+
+      <a href="/2020/04/02/Test-image/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
+        <div>
 </div>
-        </div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-04-02&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-02
+          </div>
         
         
         
@@ -154,18 +180,18 @@
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/03/08/NOTE/">
-        <p class="h4 index-header">NOTE</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/03/08/NOTE/">NOTE</a>
+
+      <a href="/2020/03/08/NOTE/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">elbow
+        <div>elbow
 terminal
 
 fluentMeshToFoam elbow.mshsim
@@ -177,28 +203,14 @@ touch case.foam
 boundary conditiontype            empty; 2D
 
 type            noSlip;
-type            fixedValue;
-value           uniform 0;
-
-fliesflie 0 boundary
-
-flie constanttransportProperties nuturbulenceProperties method RAS LES laminar
-flie system 
-
-units
-[kg,m,s,k…]
-
-
-solvesteady: deltaT          1;writeFormat     binary\ascii;
-
-TShspe_TEST
-constant    /boundary    /nu    /lamina</div>
-        </div>
+type</div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-08&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-08
+          </div>
         
         
         
@@ -206,49 +218,32 @@ constant    /boundary    /nu    /lamina</div>
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/03/08/Veen-2019-to-2020/">
-        <p class="h4 index-header">Veen 2019 to 2020</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/03/08/Veen-2019-to-2020/">Veen 2019 to 2020</a>
+
+      <a href="/2020/03/08/Veen-2019-to-2020/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Hey veen, if the world make you unhappy fuck it!
+        <div>Hey veen, if the world make you unhappy fuck it!
 
 
 希望10年、20年之后，我还是一直坚持着自己喜欢的，做让自己开心的事。
 > 2019说得最多的一个字是难，2020我希望最多的是开心。
 
 
-从元旦就开始想写一篇推送总结总结自己的一年，一直没有时间动笔，今天终于把好几个任务推进了一步，空出一天整理整理。因为懒，所以就没有放上图片。开头那句话一直犹豫着要不要放上来，不过我觉得说得挺对。
-翻开手机相册，打开微信朋友圈，把时间线拖到2019年1月1日，好像这一年之间过得并不快，甚至可以用艰难来 形容。细细一看生活中留下的快乐还是更多，因为吐槽生活的朋友圈一般不会保留1天，留下的大多数还是快乐。
-
-2019年任务其实完成的不错：
-
-
- 没写SCI但是总不能只盯着 SCI和论文这一年能力上的提升比18年多了很多；
-
- 省部级以上获奖证书也拿到了；
-
- 思考人生这件事情做的不是很好；
-
- 长途骑行还在规划当中；
-
- 学法语这件事情扔了五六年，等上研究生再捡起来吧。
-
-
-19年重装了两次系统，大部分的钱花在了吃和设备上，回想起来运气的确是不大好。
-写</div>
-        </div>
+从元旦就开始想写一篇推送总结总结自己的一年，一直没有时间动笔，今天终于把好几个任务推进了一步，空出一天整理整理。因为懒，所以就没有放上图片。开头那句话一直犹豫</div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-08&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-08
+          </div>
         
         
         
@@ -256,25 +251,26 @@ constant    /boundary    /nu    /lamina</div>
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/03/08/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%99%A8/">
-        <p class="h4 index-header">文件下载器</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/03/08/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%99%A8/">文件下载器</a>
+
+      <a href="/2020/03/08/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%99%A8/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">油猴网盘万能助手+XDown
+        <div>油猴网盘万能助手+XDown
 </div>
-        </div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-08&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-08
+          </div>
         
         
         
@@ -282,34 +278,26 @@ constant    /boundary    /nu    /lamina</div>
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/03/08/hello-world/">
-        <p class="h4 index-header">Hello Hexo</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/03/08/hello-world/">Hello Hexo</a>
+
+      <a href="/2020/03/08/hello-world/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server$ hexo server
-More info: Server
-Generate static files$ hexo generate
-More info: Generating
-Deploy to remote sites$ hexo deploy
-More info: Deployment
-提交修改$ hexo g -d
-</div>
-        </div>
+        <div>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick</div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-03-08&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-08
+          </div>
         
         
         
@@ -317,28 +305,29 @@ More info: Deployment
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/12/25/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%88%AA%E5%B1%8F/">
-        <p class="h4 index-header">Chrome浏览器截屏</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/12/25/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%88%AA%E5%B1%8F/">Chrome浏览器截屏</a>
+
+      <a href="/2019/12/25/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%88%AA%E5%B1%8F/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Chrome(谷歌浏览器）快速截取整个页面打开网页页面
+        <div>Chrome(谷歌浏览器）快速截取整个页面打开网页页面
 按F12打开开发者控制台
 使用快捷键ctrl+shift+p，打开一个命令行输入框。然后输入screen,选择【Capture full size screenshot】
 几秒之后会弹出保存窗口，保存图片即可
 </div>
-        </div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-25&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-12-25
+          </div>
         
         
         
@@ -346,18 +335,18 @@ More info: Deployment
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/12/23/learnmarkdown-cn/">
-        <p class="h4 index-header">learnmarkdown-cn</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/12/23/learnmarkdown-cn/">learnmarkdown-cn</a>
+
+      <a href="/2019/12/23/learnmarkdown-cn/" class="index-excerpt">
         
         
           
         
-        <div class="index-excerpt" >
-          <div class="index-text mb-1"> Markdown 由 John Gruber 于 2004年创立. 它旨在成为一门容易读写的语法结构，并可以便利地转换成 HTML（以及其他很多）格式。
+        <div> Markdown 由 John Gruber 于 2004年创立. 它旨在成为一门容易读写的语法结构，并可以便利地转换成 HTML（以及其他很多）格式。
 在不同的解析器中，Markdown 的实现方法有所不同。
 此教程会指出哪些特征是通用，哪一些只对某一解析器有效。
 
@@ -375,23 +364,14 @@ HTML标签
 
 
 HTML标签
-Markdown 是 HTML 的父集，所以任何 HTML 文件都是有效的 Markdown。
-&lt;!--这意味着我们可以在 Markdown 里使用任何 HTML 元素，比如注释元素，
-且不会被 Markdown 解析器所影响。不过如果你在 Markdown 文件内创建了 HTML 元素，
-你将无法在 HTML 元素的内容中使用 Markdown 语法。--&gt;
-
-标题
-通过在文本前加上不同数量的hash(#), 你可以创建相对应的 &lt;h1&gt; 到 &lt;h6&gt; HTML元素。
-# 这是一个 &lt;h1&gt;
-## 这是一个 &lt;h2&gt;
-### 这是一个 &lt;h3&gt;
-#</div>
-        </div>
+Markdown 是 HTM</div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-23&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-12-23
+          </div>
         
         
         
@@ -399,100 +379,106 @@ Markdown 是 HTML 的父集，所以任何 HTML 文件都是有效的 Markdown�
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/12/19/Mark/">
-        <p class="h4 index-header">Mark</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/12/19/Mark/">Mark</a>
+
+      <a href="/2019/12/19/Mark/" class="index-excerpt">
         
         
           
-          
         
-        <div class="index-excerpt" style="max-height: none;">
-          <div class="index-text mb-1">
+        <div>
     Interesting Mark
-        ...</div>
         </div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-19&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-12-19
+          </div>
         
         
         
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%94%B6%E8%97%8F">收藏</a>&nbsp;
-          
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%94%B6%E8%97%8F/">收藏</a>
+            
+          </div>
         
       </div>
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/12/14/Win10%E4%B8%93%E4%B8%9A%E7%89%88%E7%A0%B4%E8%A7%A3%E5%8F%8A%E5%8D%93%E8%B6%8A%E6%80%A7%E8%83%BD%E5%BC%80%E5%90%AF/">
-        <p class="h4 index-header">Win10专业版激活及卓越性能开启</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/12/14/Win10%E4%B8%93%E4%B8%9A%E7%89%88%E7%A0%B4%E8%A7%A3%E5%8F%8A%E5%8D%93%E8%B6%8A%E6%80%A7%E8%83%BD%E5%BC%80%E5%90%AF/">Win10专业版激活及卓越性能开启</a>
+
+      <a href="/2019/12/14/Win10%E4%B8%93%E4%B8%9A%E7%89%88%E7%A0%B4%E8%A7%A3%E5%8F%8A%E5%8D%93%E8%B6%8A%E6%80%A7%E8%83%BD%E5%BC%80%E5%90%AF/" class="index-excerpt">
         
         
           
-          
         
-        <div class="index-excerpt" style="max-height: none;">
-          <div class="index-text mb-1">
+        <div>
     小白的Win10装机之路（二）
-        ...</div>
         </div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-14&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-12-14
+          </div>
         
         
         
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%B3%BB%E7%BB%9F">系统</a>&nbsp;
-          
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%B3%BB%E7%BB%9F/">系统</a>
+            
+          </div>
         
       </div>
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
+  <div class="row mx-auto index-card">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/12/13/Win10%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/">
-        <p class="h4 index-header">Win10装机指南</p>
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/12/13/Win10%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/">Win10装机指南</a>
+
+      <a href="/2019/12/13/Win10%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/" class="index-excerpt">
         
         
           
-          
         
-        <div class="index-excerpt" style="max-height: none;">
-          <div class="index-text mb-1">
+        <div>
     小白的Win10装机之路（一）
-        ...</div>
         </div>
       </a>
 
-      <div>
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-13&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-12-13
+          </div>
         
         
         
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%B3%BB%E7%BB%9F">系统</a>&nbsp;
-          
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%B3%BB%E7%BB%9F/">系统</a>
+            
+          </div>
         
       </div>
     </div>
@@ -500,14 +486,14 @@ Markdown 是 HTML 的父集，所以任何 HTML 文件都是有效的 Markdown�
 
 
 
-  <nav aria-label="index posts navigation">
-    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-double-right"></i></a>
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
   
   <script>
-    for (ele of document.getElementById("pagination").getElementsByClassName("page-number")) {
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
       ele.href += '#board';
     }
   </script>
@@ -523,8 +509,8 @@ Markdown 是 HTML 的父集，所以任何 HTML 文件都是有效的 Markdown�
   </main>
 
   
-    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
-      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
     </a>
   
 
@@ -553,120 +539,55 @@ Markdown 是 HTML 的父集，所以任何 HTML 文件都是有效的 Markdown�
   
 
   
+
   
-</footer>
-<footer class="mt-5">
-  <div class="text-center py-3">
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
-    <br>
-
-    <font size="3" face="" color="#2f4154">
-      <p class="copyright text-muted">
-        Copyright © Veen 2019
-        <br>
-        Find me on <a href="https://github.com/Veenxz" target="_blank">GitHub</a> |
-      <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank">
-      <img src="https://d33wubrfki0l68.cloudfront.net/3031be41e8753c70508aa88e84ed8f4f653f157e/d2d9a/images/cc-by-nc-sa.svg" srcset="/img/loading.gif" alt="Creative Commons">
-      </a>
-      </p>
-      </font>
-
-    
-  
-    <!-- 不蒜子统计PV -->
-    
-    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
-          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
-  
-  
-    <!-- 不蒜子统计UV -->
-    
-    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
-            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
-  
-  <br>
-
-
-
-    
-
-  </div>
 
   <footer class="mt-5">
-    <div class="text-center py-3">  
-    
-    
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
     </div>
+    
 
+    
 
+    
+  </div>
 </footer>
 
 <!-- SCRIPTS -->
-<script src="/lib/jquery/jquery.min.js" ></script>
-<script src="/lib/popper/popper.min.js" ></script>
-<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
-<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
-<script src="/js/main.js" ></script>
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
 
 
-  <script src="/js/lazyload.js" ></script>
+  <script  src="/js/lazyload.js" ></script>
 
 
 
 
 
-  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
 
 
 
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
 
 
 <!-- Plugins -->
 
 
-  
-    <!-- Baidu Analytics -->
-    <script>
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?f3e155aa4250c21a7d6810f989a617ce";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
-  
 
-  
-
-  
-
-  
-
-  
-
-
-
-
-  <script src="/lib/prettify/prettify.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      $('pre').addClass('prettyprint  ');
-      prettyPrint();
-    })
-  </script>
-
-
-
-  <script src="/lib/typed/typed.min.js" ></script>
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
   <script>
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Cleverness is a gift, kindness is a choice.&nbsp;",
+        "An elegant Material-Design theme for Hexo&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -681,11 +602,11 @@ Markdown 是 HTML 的父集，所以任何 HTML 文件都是有效的 Markdown�
 
 
 
-  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
   <script>
     anchors.options = {
       placement: "right",
-      visible: "false",
+      visible: "hover",
       
     };
     var el = "h1,h2,h3,h4,h5,h6".split(",");
@@ -698,29 +619,28 @@ Markdown 是 HTML 的父集，所以任何 HTML 文件都是有效的 Markdown�
 
 
 
-  <script src="/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
   <script>
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
     inputArea.onclick = function () {
-      getSearchFile(path);
+      searchFunc(path, 'local-search-input', 'local-search-result');
       this.onclick = null
     }
   </script>
 
 
 
-  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
-  <script>
-    $("#post img:not(.no-zoom img, img[no-zoom])").each(
-      function () {
-        var element = document.createElement("a");
-        $(element).attr("data-fancybox", "images");
-        $(element).attr("href", $(this).attr("src"));
-        $(this).wrap(element);
-      }
-    );
-  </script>
+
+
+
+
+
+
+
+
+
+
 
 
 
