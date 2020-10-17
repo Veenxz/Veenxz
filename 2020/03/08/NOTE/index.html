@@ -1,0 +1,682 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Veen">
+  <meta name="keywords" content="">
+  <title>NOTE ~ Veen</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_pf9vaxs7x7b.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Veen</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-03-08 11:35" pubdate>
+        2020年3月8日 中午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      445 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      8
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">NOTE</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h1 id="elbow"><a href="#elbow" class="headerlink" title="elbow"></a>elbow</h1><blockquote>
+<p>terminal</p>
+</blockquote>
+<pre><code class="hljs crmsh">fluentMeshToFoam elbow.mshsim
+
+ //constant\poluMesh mesh location
+
+foamCleanTutorials cleanDir
+touch case.foam</code></pre>
+
+<blockquote>
+<p>boundary condition<br>type            empty; 2D</p>
+</blockquote>
+<p>type            noSlip;</p>
+<p>type            fixedValue;</p>
+<p>value           uniform 0;</p>
+<blockquote>
+<p>flies<br>flie 0 boundary</p>
+</blockquote>
+<p>flie constant<br>transportProperties nu<br>turbulenceProperties method RAS LES laminar</p>
+<p>flie system </p>
+<blockquote>
+<p>units</p>
+<p>[kg,m,s,k…]</p>
+</blockquote>
+<blockquote>
+<p>solve<br>steady: deltaT          1;<br>writeFormat     binary\ascii;</p>
+</blockquote>
+<h1 id="TShspe-TEST"><a href="#TShspe-TEST" class="headerlink" title="TShspe_TEST"></a>TShspe_TEST</h1><blockquote>
+<p>constant    /boundary    /nu    /laminar<br>0    /p    /U</p>
+</blockquote>
+<pre><code class="hljs irpf90">blockMesh
+<span class="hljs-keyword">touch</span> <span class="hljs-keyword">case</span>.foam
+simpleFoam</code></pre>
+
+<h1 id="arota-transient"><a href="#arota-transient" class="headerlink" title="arota_transient"></a>arota_transient</h1><pre><code class="hljs css"><span class="hljs-selector-tag">fluent3DMeshToFoam</span> <span class="hljs-selector-tag">fluent</span><span class="hljs-selector-class">.msh</span></code></pre>
+<blockquote>
+<p>/p<br>type            codedFixedValue;<br>changable pressure with time on boundary</p>
+</blockquote>
+<p>“OUTLET.*”=OUTLET1 OUTLET2 OUTLET3…</p>
+<blockquote>
+<p>/controlDict<br>important: deltaT<br>writeFormat     binary;</p>
+</blockquote>
+<pre><code class="hljs awk">pimpleFoam
+foamListTimes -rm  <span class="hljs-regexp">//</span><span class="hljs-keyword">delete</span> previous solution data</code></pre>
+<p>postProcessing residuals data</p>
+<p>foamMonitor -l postProcessing/residuals/0/residuals.dat</p>
+<h1 id="sylinder-TEST"><a href="#sylinder-TEST" class="headerlink" title="_sylinder_TEST"></a>_sylinder_TEST</h1><pre><code class="hljs lsl">inGroups        List&lt;word&gt; <span class="hljs-number">1</span>(mywall);
+
+empty cyclic cyclicAMI wedge symmetry &gt; #includeEtc <span class="hljs-string">"caseDicts/setConstraintTypes"</span>
+
+internalField   uniform (<span class="hljs-number">1</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>);
+
+pimpleFoam &amp;&gt; log
+
+nOuterCorrectors    <span class="hljs-number">15</span>&gt;&gt;<span class="hljs-number">1</span>; pimple to piso
+
+foamMonitor yrange <span class="hljs-string">"[0 1]"</span></code></pre>
+
+<p>#_TaylorCouettte_steadyState</p>
+<pre><code class="hljs routeros"><span class="hljs-string">".*"</span>
+&#123;
+<span class="hljs-built_in">	type </span>zeroGradient;
+&#125;</code></pre>
+
+<pre><code class="hljs bash">&gt; foamGet residuals
+<span class="hljs-built_in">functions</span>
+&#123;
+	<span class="hljs-comment">#includeFunc residuals</span>
+&#125;</code></pre>
+
+<pre><code class="hljs properties"><span class="hljs-attr">decomposePar</span> <span class="hljs-string"></span>
+
+<span class="hljs-attr">mpirun</span> <span class="hljs-string">-np 4 simpleFoam -parallel</span></code></pre>
+
+
+<h1 id="cyclic-RANS"><a href="#cyclic-RANS" class="headerlink" title="cyclic_RANS"></a>cyclic_RANS</h1><p>👉<br>wall function<br>    type    kqRWallFunction;<br>    value    $internalField;</p>
+<p>./Allrun<br>decomposePar -force<br>mpirun -np 4 simpleFoam -parallel<br>reconstructPar</p>
+<h1 id="dynMesh"><a href="#dynMesh" class="headerlink" title="_dynMesh"></a>_dynMesh</h1><p>dynamicMeshDict   movingwall nessary file</p>
+<p>pointDisplacement</p>
+<h1 id="livingRoom"><a href="#livingRoom" class="headerlink" title="_livingRoom"></a>_livingRoom</h1><p>topoSet<br>        name    window;<br>        type    faceSet;<br>        action  new;<br>        source  boxToFace;<br>        sourceInfo<br>        {<br>            box (0.5 1.0 -0.001)(2.5 2.0 0.001);<br>        }</p>
+<p>p_rgh</p>
+<pre><code>type        zerogradient;
+    type            fixedFluxPressure;
+    value           uniform 0;
+
+equationOfState perfectGas;</code></pre><p>buoyantSimpleFoam</p>
+<h1 id="BernardCells"><a href="#BernardCells" class="headerlink" title="_BernardCells"></a>_BernardCells</h1><p>buoyantPimpleFoam</p>
+<p>–&gt; FOAM FATAL ERROR:<br>LHS and RHS of - have different dimensions<br>     dimensions : [0 2 -2 0 0 0 0] - [1 -1 -2 0 0 0 0]</p>
+<h1 id="rhiCentralFoam"><a href="#rhiCentralFoam" class="headerlink" title="rhiCentralFoam"></a>rhiCentralFoam</h1><h1 id="rhoSimpleFoam"><a href="#rhoSimpleFoam" class="headerlink" title="rhoSimpleFoam"></a>rhoSimpleFoam</h1><pre><code class="hljs scala">mu          <span class="hljs-number">0</span>;
+
+sutherland  mu relacted <span class="hljs-keyword">with</span> <span class="hljs-type">T</span>
+internalField   uniform $<span class="hljs-type">Uinlet</span>;
+internalField   uniform $pOut;
+
+<span class="hljs-class"><span class="hljs-keyword">type</span>           <span class="hljs-title">fixedMean</span></span>;  <span class="hljs-comment">//face average</span>
+<span class="hljs-class"><span class="hljs-keyword">type</span>       <span class="hljs-title">totalTemperature</span></span>;
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">turbulentIntensityKineticEnergyInlet</span></span>;</code></pre>
+
+<h1 id="VOF"><a href="#VOF" class="headerlink" title="VOF"></a>VOF</h1><p>type           constantAlphaContactAngle;<br>interFoam</p>
+<pre><code>pRefCell    0;
+pRefValue           0;</code></pre><h1 id="Mixture"><a href="#Mixture" class="headerlink" title="Mixture"></a>Mixture</h1><p>driftFluxFoam</p>
+<p>relativeVelocityModel simple; //relative Velocity</p>
+<h1 id="find-solvers"><a href="#find-solvers" class="headerlink" title="find solvers"></a>find solvers</h1><p>OpenFOAM/OpenFOAM-7/applications/solvers/xx/xx.c &gt; discriptions</p>
+<p>OKSS2</p>
+<p>laplacianFoam.c</p>
+<pre><code class="hljs routeros">Application
+    laplacianFoam
+
+Description
+    Solves a<span class="hljs-built_in"> simple </span>Laplace equation, e.g. <span class="hljs-keyword">for</span> thermal diffusion <span class="hljs-keyword">in</span> a solid.
+
+            fvScalarMatrix TEqn
+            (
+                fvm::ddt(T) - fvm::laplacian(DT, T)
+             ==
+                fvOptions(T)
+            );</code></pre>
+
+<p>scalarTransportFoam</p>
+<pre><code class="hljs excel">Application
+    scalarTransportFoam
+
+Description
+    Solves the steady <span class="hljs-built_in">or</span> transient transport equation for a passive scalar.
+
+            fvScalarMatrix TEqn
+            (
+                f<span class="hljs-symbol">vm:</span><span class="hljs-symbol">:dd</span><span class="hljs-built_in">t</span>(<span class="hljs-built_in">T</span>)
+              + f<span class="hljs-symbol">vm:</span><span class="hljs-symbol">:di</span>v(<span class="hljs-built_in">phi</span>, <span class="hljs-built_in">T</span>)
+              - f<span class="hljs-symbol">vm:</span><span class="hljs-symbol">:la</span>placian(DT, <span class="hljs-built_in">T</span>)
+             ==
+                fvOptions(<span class="hljs-built_in">T</span>)
+            );</code></pre>
+
+
+<h1 id="Energe-equation"><a href="#Energe-equation" class="headerlink" title="Energe equation"></a>Energe equation</h1><p>name.c&gt;Make&gt;flies&gt;name.C name</p>
+<p>$ wmake</p>
+<blockquote>
+<p>name.c</p>
+</blockquote>
+<pre><code class="hljs autohotkey">   volScalarField T
+   &#123;
+IOobject
+&#123;
+    <span class="hljs-string">"T"</span>,
+           runTime.timeName(),
+<span class="hljs-built_in">           mesh,</span>
+<span class="hljs-title">           IOobject::</span>MUST_READ,
+<span class="hljs-title">           IOobject::</span>AUTO_WRITE
+&#125;,
+       mesh
+   &#125;<span class="hljs-comment">;</span>
+
+   dimensionedScalar DT
+   &#123;
+       <span class="hljs-string">"DT"</span>,
+       dimensionSet(<span class="hljs-number">0</span>,<span class="hljs-number">2</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>),
+       <span class="hljs-number">0.0001</span>
+   &#125;<span class="hljs-comment">;</span>
+
+
+   fvScalarMatrix TEqn
+   &#123;
+<span class="hljs-title">       fvm::</span>ddt(T)
+<span class="hljs-title">     + fvc::</span>div(phi, T)
+<span class="hljs-title">     - fvc::</span>laplacian(DT, T)
+   &#125;<span class="hljs-comment">;</span></code></pre>
+
+<h1 id="projectionFoam"><a href="#projectionFoam" class="headerlink" title="projectionFoam"></a>projectionFoam</h1><p>projectionFoam.C</p>
+<p>EXE = $(FOAM_USER_APPBIN)/projectionFoam</p>
+<p>phi = fvc::interpolate(U) &amp; mesh.Sf(); volume to surface</p>
+<h1 id="dym"><a href="#dym" class="headerlink" title="dym"></a>dym</h1><pre><code class="hljs autoit">&gt;pisoDyMFoam.C
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">"dynamicFvMesh.H"</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">"createDynamicFvMesh.H"</span></span>
+mesh.update()<span class="hljs-comment">;</span>
+&gt;UEqn
+phi = phi - mesh.phi()<span class="hljs-comment">;</span>
+
+&gt;options
+-ldynamicFvMesh \
+-ltopoChangerFvMesh \
+-I$(LIB_SRC)/dynamicFvMesh/lnInclude \</code></pre>
+<p>missing operator &gt;options environment variables</p>
+<h1 id="EMMS"><a href="#EMMS" class="headerlink" title="EMMS"></a>EMMS</h1><h1 id="BASUOQU"><a href="#BASUOQU" class="headerlink" title="BASUOQU"></a>BASUOQU</h1><p>pimpleFoam -listScalarBCs -listVectorBCs \list boundary type</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/04/02/Test-image/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Test image</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/03/08/Veen-2019-to-2020/">
+                        <span class="hidden-mobile">Veen 2019 to 2020</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "NOTE&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
