@@ -25,8 +25,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I’m currently working on CFD.
-- 🌱 I’m currently learning C++ and OpenCV.
+- 🔭 I’m currently working on OpenFOAM and Rhino.
+- 🌱 I’m currently learning C++ and medical image processing.
 - 💬 Ask me about anything, I am happy to help.
 
 **Languages and Tools:**  
