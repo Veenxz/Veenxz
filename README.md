@@ -2,12 +2,10 @@
 
 
 
-
-
-[![Veen's github stats](https://github-readme-stats.vercel.app/api?username=Veenxz&show_icons=true&line_height=20&theme=vue-dark&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)](https://github.com/Veenxz/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Veenxz&layout=compact&bg_color=30,3bb3f3,0063b1&title_color=fff&text_color=fff)](https://github.com/Veenxz/github-readme-stats)
-[![Veen's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Veenxz&bg_color=30,5094f0,24c020&title_color=fff&text_color=fff)](https://github.com/Veenxz/github-readme-stats)
-
+<p align="center"> 
+<img height="160em" src="https://github-readme-stats.vercel.app/api?username=Veenxz&show_icons=true&layout=compact&line_height=20&theme=vue-dark&bg_color=30,e96443,904e95&title_color=fff&text_color=fff" />  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Veenxz&layout=compact&bg_color=30,3bb3f3,0063b1&title_color=fff&text_color=fff" />
+</p>
+<p align="center"> <img height="180em" src="https://github-readme-stats.vercel.app/api/wakatime?username=Veenxz&bg_color=30,5094f0,24c020&title_color=fff&text_color=fff" /></p>
 <!--[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=Veenxz&repo=My_Beamer)](https://github.com/Veenxz/My_Beamer)-->
 
 <!--
@@ -25,9 +23,10 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I’m currently working on OpenFOAM and Rhino.
+- 🔭 I’m currently working on BioFluid Mechanics.
 - 🌱 I’m currently learning C++ and medical image processing.
 - 💬 Ask me about anything, I am happy to help.
+- ⚡ SoftWare: Rhino OpenFOAM Fluent.
 
 **Languages and Tools:**  
 <code><img height="26" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png"></code>
