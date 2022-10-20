@@ -13,7 +13,7 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on CFD.
+- 🔭 I’m currently working on Microfluidic.
 - 🌱 I’m currently learning C++.
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
@@ -23,8 +23,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 I’m currently working on BioFluid Mechanics.
-- 🌱 I’m currently learning C++ and medical image processing.
+- 🔭 I’m currently working on BioFluid Mechanics and Microfluidics.
+- 🌱 I’m currently learning C++ and LAMMPS.
 - 💬 Ask me about anything, I am happy to help.
 - ⚡ SoftWare: Rhino OpenFOAM Fluent.
 
